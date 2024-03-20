@@ -1,0 +1,121 @@
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla avanzada</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    
+    table,
+    table * {
+        border: 1px solid black;
+    }
+    .circulo{
+        display: inline-block ;
+        border: 1px solid black;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    .rosa{
+        background-color: pink;
+    }
+    .morado{
+        background-color: blueviolet;
+    }
+    .azul{
+        background-color: darkturquoise;
+    }
+    .negro{
+        background-color: black;
+    }
+    .verde{
+        background-color: springgreen;
+    }
+    th, td{
+        padding: 5px;
+    }
+</style>
+
+<body>
+
+    <h1>Comparativa de reproductores MP3</h1>
+
+    <p>Tabla comparativa de las características técnicas de los reproductores MP3</p>
+
+
+
+    <table>
+<thead>
+        <tr>
+            <th></th>
+            <th colspan="3"><img src="../html/mp3.jpg" alt="" height="20px"><br>MP3mini</th>
+            <th colspan="2"><img src="../html/mp3.jpg" alt="" height="50px">MP3grande</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Capacidad de almacenamiento</th>
+            <td>4GB <br>(1.000 canciones)</td>
+            <td>8GB <br>(2.000 canciones)</td>
+            <td>16GB <br>(4.000 canciones)</td>
+            <td>30GB <br>(7.500 canciones)</td>
+            <td>80GB <br>(20.000 canciones)</td>
+        </tr>
+        <!-- Para seleccionar varias lineas al mismo tiempo selecciono Alt + Shift + arrastrar, así se puede escribir en varias líneas al mismo tiempo -->
+
+        <tr>
+            <th>Colores</th>
+            <td>
+                <div class="circulo azul"></div>
+            </td>
+            <td>
+                <div class="circulo rosa"></div>
+                <div class="circulo morado"></div>
+                <div class="circulo azul"></div>
+                <div class="circulo verde"></div>
+            </td>
+            <td>
+                <div class="circulo negro"><div></div>
+            </td>
+            <td colspan="2">
+                <div class="circulo rosa"></div>
+                <div class="circulo morado"></div>
+            </td>
+            
+        </tr>
+
+        <tr>
+            <th>Pantalla</th>
+            <td colspan="3">LCD de 3 cm (diagonal) con retroiluminación</td>
+            <td colspan="2">LCD de 6 cm (diagonal) con retroiluminación</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Tiempo de carga</th>
+                <td rowspan="2" colspan="3">Unas 3 horas</td>
+                <td colspan="2">Unas 4 horas</td>
+        </tr>
+        <tr>
+            <td colspan="2">Unas 2 horas para alcanzar el 80% de su capacidad</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+</body>
+
+</html>
