@@ -1,0 +1,121 @@
+#color {
+    background-color: lightgray;
+    color: dodgerblue;
+    border: 3px solid;
+}
+
+#color h2 {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+#color div {
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+
+
+
+#mal-ejemplo-color {
+    background-color: crimson;
+    color: fuchsia;
+}
+
+#alinear #deco #transformar #sombras{
+    border: 3px solid black;
+}
+
+#alinear p {text-align: left;}
+#alinear p + p {text-align: right;}
+#alinear p + p+ p{text-align: center;}
+#alinear p + p + p + p {text-align: justify;}
+#deco h2{ 
+    text-decoration-line: line-through;
+}
+#deco h3{
+    text-decoration-line: overline;}
+    #deco h4{text-decoration-line: underline;
+    text-decoration: 8px;}
+        #deco p{
+            text-decoration: overline underline;
+            text-decoration-style: dashed;}
+
+            #deco-a{
+                text-decoration: none;
+                background-color: blue;
+                color: blanchedalmond;
+                padding: 4px;
+                margin: 4px;
+                border-radius: 5px;
+
+            }
+            #transformar p{
+                text-transform: uppercase;
+
+            } #transformar p + p {
+                text-transform: lowercase;
+                
+            }
+            #transformar p + p + p {
+                text-transform: capitalize;
+                
+            }
+            #indentar{
+                text-indent: 50px;
+            }
+            #esp1{ letter-spacing: 5px;   
+            }
+            #esp2
+            { letter-spacing: -2px;   
+            }
+
+            #altura p + p {
+                line-height: 0.6;
+                background-color: rgb(51, 190, 183);
+            }
+            #altura p:last-child{
+                line-height: 1.8;
+            }
+            #esp-palabras p + p{
+                background-color: aquamarine;
+                word-spacing: -3px;
+            }
+        #esp-palabras p  :last-child {
+            word-spacing:10px;
+        }
+        #sombras h2:first-child{
+        /* primer valor horizontal, segundo valor vertical*/
+            text-shadow: 2px 10px
+        }
+        #sombras h2:nth-child(2){
+            text-shadow: 2px 2px chocolate;
+        }
+        #sombras h2:nth-child(3){
+            /*tercer valor,blur o desenfoque*/
+            text-shadow: 2px 2px 5px rgb(255, 28, 179);
+        }
+        #sombras h2:nth-child(5){
+            color: white (255, 255, 255);
+            text-shadow: 2px 2px 10px rgb(0, 0, 0);
+        }
+        #sombras h2:nth-child(7){
+            text-shadow: 0px 0px 3px  rgb(146, 16, 16);
+        }
+        #sombras h2:nth-child(9){
+           text-shadow: 0 0 3px purple,0 0 2px orangered;
+        }
+        #sombras h2:last-child {
+            color: white;
+            text-shadow: 1px 1px black, 0 0 25px blue,0 0 5px darkblue;
+        }
+        
+        
+
+
+           
+            
+           
+    
