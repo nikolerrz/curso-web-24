@@ -1,0 +1,88 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+#site-header {
+    background-color: #708892;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#site-header div img {
+    width: 50px;
+    margin: 20px;
+}
+
+#site-header div {
+    display: flex;
+    align-items: center;
+
+}
+
+#site-header nav ul {
+    display: flex;
+}
+
+#site-header nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+#site-mail {
+    padding: 50px 0px;
+}
+
+#site-main h1 {
+    font-size: 28px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#site-main section {
+    margin-bottom: 50px;
+    background-color: rgb(255, 185, 224);
+    color: white;
+    padding: 50px;
+}
+
+#site-main h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+} 
+
+#site-main h3{
+    font-size: 1.5px
+    margin-bottom : 20px
+ 
+}
+
+#site-footer {
+    background-color: white;
+    color: #020202;
+    padding: 20px;
+    text-align: center;
+}
+
+#site-main article {
+    background-color: rgb(194, 147, 182);
+    margin: 10px;
+    width:25 % ;
+    padding: 20px;
+    border-radius:10px ;
+    text-align: center ;
+}
+
+
+
