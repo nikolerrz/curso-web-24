@@ -1,88 +1,121 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+
+*{
     padding: 0;
+    margin: 0;
     text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
 }
 
 #site-header {
-    background-color: #708892;
+    background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#site-header div img {
+#site-header img {
     width: 50px;
-    margin: 20px;
+    margin-right: 20px;
 }
+
 
 #site-header div {
     display: flex;
     align-items: center;
-
 }
 
 #site-header nav ul {
     display: flex;
 }
 
-#site-header nav ul li a {
+#site-header nav ul a {
     color: white;
     font-weight: bold;
     padding: 5px 15px;
     display: inline-block;
 }
 
-#site-mail {
-    padding: 50px 0px;
+#site-main{
+    padding: 50px 0;
+    background-color: white;
+    margin: 45px 0;
 }
 
 #site-main h1 {
-    font-size: 28px;
-    padding: 30px;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-#site-main section {
-    margin-bottom: 50px;
-    background-color: rgb(255, 185, 224);
-    color: white;
-    padding: 50px;
-}
-
 #site-main h2 {
     font-size: 2em;
     text-align: center;
     margin-bottom: 50px;
-} 
-
-#site-main h3{
-    font-size: 1.5px
-    margin-bottom : 20px
- 
 }
 
-#site-footer {
-    background-color: white;
-    color: #020202;
-    padding: 20px;
-    text-align: center;
+#site-main h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#site-main article p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#site-main article a {
+    color: #ecadad;
+    font-weight: bold;
 }
 
 #site-main article {
-    background-color: rgb(194, 147, 182);
+    background-color: #fff;
     margin: 10px;
-    width:25 % ;
+    width: 25%;
     padding: 20px;
-    border-radius:10px ;
-    text-align: center ;
+    border-radius: 10px;
+    text-align: center;
 }
 
+#site-main section {
+    margin-bottom: 50px;
+    background-color: #ecadad;
+    color: white;
+    padding: 50px;
+}
 
+#site-main section div {
+    display: flex;
+    justify-content: center;
+}
 
+/* Flex para alinear las a con margin-top:auto  */
+
+#site-main section blockquote {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #000000;
+    margin-bottom: 20px;
+}
+
+/* #site-main blockquote footer {
+    margin-top: 10px;
+} */
+
+#site-main section cite, #site-main section p {
+    /* font-style: italic; */
+    color: #333;
+}
+
+    #site-footer {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
