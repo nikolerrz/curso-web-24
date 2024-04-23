@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#showcase { background-image: url(https://hips.hearstapps.com/hmg-prod/images/gettyimages-1385280473-647f35fa441f4.jpg);
+    background-position: top;
+    background-size: cover;
+
+
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+color: brown;
+}
+#showcase h1 {
+    font-size: 3.5rem;
+
+}
+#showcase p {
+    font: 1.35rem;
+}
+.button{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 5px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.button:hover{
+    color: white;
+    background-color: rgb(231, 12, 31);
+}
+section, div {
+    box-sizing: border-box;
+    padding: 20%;
+  
+}
