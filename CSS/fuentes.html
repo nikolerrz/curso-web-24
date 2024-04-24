@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuentes</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="fuentes.css">
+</head>
+
+<body>
+    <h1>Fuentes</h1>
+    <p>Elegir una fuente apropiada tiene un fuerte impacto en todos los lectores que experimenta un sitio web.</p>
+    <p>La fuente correcta puede crear una reconocible entidad para una marca o pagina web.</p>
+    <p>Usar una fuente facil de leer es muy importante. ya que añade valor a un texto. Tambien es importante elegir un
+        correcto color y tamaño.</p>
+
+    <h2>Familia de fuentes genericas</h2>
+    <p>En CSS hay 5 familias de fuentes genericas</p>
+    <ol>
+        <li>Fuente con serif tienen un pequeño trazo en las puntas de cada letra </li>
+        <li>Fuentes sans-serif.No tienen los trazos de las enteriores y tiene un aspecto , minimalista y moderno</li>
+        <li>Fuentes monospace. todas las letras tienen la misma anchura.crean un aspecto mecanico. La fuente que vemos
+            en nuestro codigo es de este tipo. </li>
+        <li>Fuentes cursivas. Imitan la caligrafia humana</li>
+        <li>fuentes Fantasy.ÇTienen un aspecto decorativo/jugueton</li>
+    </ol>
+    <img src="" alt="">
+    <h3>Algunos ejemplos de fuentes</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Fuente</th>
+                <th>Ejemplos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Serif</td>
+
+                <td id="Serif">
+                    <p>Time new Roman</p>
+                    <p>Georgia</p>
+                    <p>Garamond</p>
+                </td>
+
+            </tr>
+            <tr>
+                <td>sans-serif</td>
+                <td id="sans-serif">
+                    <p>Arial</p>
+                    <p>Verdana</p>
+                    <p>Helvetica</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Monospace</td>
+                <td id="monospace">
+                    <p>Courier New</p>
+                    <p>Lucida Console</p>
+                    <p>Monaco</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Cursive</td>
+                <td id="cursive">
+                    <p>Brush Script MT</p>
+                    <p>Lucida Handwriting</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Fantasy</td>
+                <td id="fansasy">
+                    <p>Copperplate</p>
+                    <p>Papyrus</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Estilos de fuentes</h2>
+    <h3><code>font-style</code></h3>
+    <p>Esta propiedad se usa para darle cursiva a un texto. Tiene 3 propiedades :</p>
+    <div id="italic">
+        <p>este es un parrafo con estlo, Normal
+
+        </p>
+        <p>este es un parrafo con estlo,"italic" o en cursiva
+
+        </p>
+        <p>este es un parrafo con estlo," Bloque" u oblicuo, que es muy similar a la "italicac" pero con menor soporte
+        </p>
+    </div>
+    <h3><code> font- weight</code></h3>
+    <div id="weight">
+        <p>este es un parrafo normal</p>
+        <p>este es un parrafo ligero</p>
+        <p>este es un parrafo grueso</p>
+        <p>este es un parrafo mas grueso</p>
+    </div>
+
+    <h3><code> font- variant</code></h3>
+    <p>con esta propiedad podemos expecificar que un texto se muestre en "small- caps".
+    <p id="variant">con esta fuente, todas las minusculas de un texto se convertiran en mayusculas perod e menor tamaño
+    </p>
+    </div>
+    </div>
+    </p>
+    <h2> Tamaño de fuentes</h2>
+    <p>
+        la propiedad <code>font- size</code> especifica el tamaño de un texto.
+    </p>
+    <p>
+        Ser capaz de modificar los tamaños de los diferentes textos de una web es muy importante.Sin embargo , no uses
+        parrafos con tamaños mayores para que parezcan titulos y viceversa.
+        usda las correspondientes etiquetas h1-h6 para titulos p para parrafos
+    </p>
+    <p> Los valores de tamaño <b>absolutos</b> o <b>relativos</b></p>
+<p>valor absoluto</p>
+<ul>
+    <li>establece el texto a un tamaño especifico</li>
+    <li>No permite que e l usuario cambie el tamaño de texto desde su ordenador(malo por razones de accesibilidad)</li>
+    <li>Un valor absoluto es util cuando se conoce el tamaño fisico del dispositivo con el que se vizualiza nuestra pagina.</li>
+</ul>
+<p>Valor relativo:</p>
+<ul>
+    <li> establece el tamaño relativo a los elementos de alrededor.</li>
+    <li>permite al usuario cambiar el tamaño de texto en el navegador</li>
+</ul>
+<div id="absoluto">
+    <h2>esto es un titulo 2</h2>
+    <h3>esto es un titulo 3</h3>
+    <p>esto es un parrafo</p>
+    <p>esto es otro parrafo.</p>
+</div>
+<h3>Valores em</h3>
+<p>para permitir que el usuario pueda redimencionar el texto,los dev o desarrolladores utilizamos em en lugar de pixeles.</p>
+<p>1em equivale a un tamañopor defectodel texto. que son 16 px.</p>
+<p>para calcular la equivalencia de pixeles a em usa esta formula <i>px/16=em</i></p>
+
+<div id="absoluto-em">
+    <h2>esto es un titulo 2</h2>
+    <h3>esto es un titulo 3</h3>
+    <p>esto es un parrafo</p>
+    <p>esto es otro parrafo.</p>
+</div>
+
+</body>
+
+</html>

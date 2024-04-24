@@ -1,0 +1,97 @@
+
+#serif p:first-child {
+    font-family: 'Times New Roman', Times, serif;
+}
+#serif p:nth-child(2) {
+    font-family: Georgia;
+}
+#serif p:last-child {
+    font-family: Garamond;
+}
+#sans-serif p:first-child {
+    font-family: Arial;
+}
+#sans-serif p:nth-child(2) {
+    font-family: Verdana;
+}
+#sans-serif p:last-child {
+    font-family: Helvetica;
+}
+#monospace p:first-child {
+    font-family: 'Courier New', Courier, monospace;
+}
+#monospace p:nth-child(2) {
+    font-family: 'Lucida Console';
+}
+#monospace p:last-child {
+    font-family: Monaco;
+}
+#cursive p:first-child {
+    font-family: 'Brush Script MT';
+}
+#cursive p:last-child {
+    font-family: 'Lucida Handwriting';
+}
+#fantasy p:first-child {
+    font-family: Copperplate;
+}
+#fantasy p:last-child {
+    font-family: Papyrus,''Courier fantasy;
+}
+table td {
+    border-top: 1px solid blue;
+}
+code {
+    background-color: blueviolet;
+    color: rgb(168, 168, 248);
+}
+/*Estilo de fuente */
+#italic p {
+    font-style: normal;
+}
+#italic p + p {
+    font-style: italic;
+}
+#italic p:last-child{
+    font-style: oblique;
+}
+#weight p {
+    font-weight: normal;
+}
+#weight p:nth-child(2) {
+    font-weight: lighter ;
+
+}
+#weight p:nth-child(3) {
+    font-weight: bold;
+}
+#weight p:nth-child(4) {
+     font-weight: 900;
+}
+#variant{
+font-variant: small-caps;
+text-transform: capitalize;
+}
+/*Tamaños de funtes*/
+#absoluto h2{
+    font-size: 40px;
+}
+#absoluto h3{
+    font-size: 30px;
+}
+#absoluto p{
+    font-size: 14px;
+}
+#absoluto-em h2{
+    font-size: 2.5em;
+}
+#absoluto-em h3{
+    font-size: 1.75em;
+}
+
+#absoluto-em p{
+    font-size: 0.875em;
+}
+body{
+    font-size: 100%;
+}
