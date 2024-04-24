@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejerciciolidia7</title>
+    <style>
+         * {
+            margin: 0%;
+            border: 0%;
+            padding: 0%;
+            text-decoration: none;
+            list-style: none;
+     
+        }
+        #site-main h1{
+            display: flex;
+            justify-content: space-between;
+        }
+        #site-main  {
+            background-color: yellowgreen;
+            padding: 10px;
+            text-align: right;
+            
+         
+        }
+
+        #site-main ul li a{
+    
+            padding: 10px;
+            text-align:right;
+            
+        }
+
+
+        ul li a:hover {
+            background-color: rgb(219, 169, 75);
+        color: white;
+        }
+        @media (min-width: 1024px) {
+            #site-header ul {
+                display: flex;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="site-main">
+        <h1>Hover con Media Query</h1>
+      <nav>
+        <ul >
+          <li><a href="#">Elemento 1</a></li>
+          <li><a href="#">Elemento 2</a></li>
+          <li><a href="#">Elemento 3</a></li>
+        </ul>
+      </nav>
+    </header>
+</body>
+</html>
