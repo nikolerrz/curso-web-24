@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #showcase { background-image: url(https://hips.hearstapps.com/hmg-prod/images/gettyimages-1385280473-647f35fa441f4.jpg);
     background-position: top;
@@ -36,6 +37,25 @@ color: brown;
 }
 section, div {
     box-sizing: border-box;
-    padding: 20%;
-  
+    padding: 20px;
+    width: 33.33%;
+    line-height: 200%;
+}
+section {
+    width: 100%;
+    text-align: center;
+}
+
+#section-a, .box-1, .box-3 {
+    color: ivory;
+    background-color: rgb(148, 47, 72); 
+}
+#section-b, .box-2 {
+    color: rgb(102, 99, 97);
+    background-color: ivory;
+}
+#section-c {
+    padding: 0;
+    display: flex;
+    text-align: left;
 }
