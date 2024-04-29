@@ -1,0 +1,58 @@
+body {
+    background-color: blue;
+    color: white;
+}
+
+img#logo {
+    width: 70px;
+}
+
+img#cuchara {
+    width: 80%;
+}
+
+img#flecha {
+    width: 120px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: wheat;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+header ul {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    font-weight: 30px;
+    line-height: 10px;
+}
+
+header ul li {
+    padding: 2px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    line-height: 20px;
+}
+
+header div#contenedor-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+header div p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 50px;
+    font-size: 0.9px;
+    width: 195px;
+}
