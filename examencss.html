@@ -5,15 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>examencss</title>
-    <link rel="stylesheet" type="text/css" href="examencss.css">
 </head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+ 
+    #site-header {
+      display: flex;
+      justify-content: center;
+      color: white;
+  }
+
+  #site-header img {
+      width: 80px;
+      margin-bottom: -8px;
+  }
+
+  #site-header p {
+      justify-content: center;
+      font-size: 13px;
+  }
+ 
+header ul li {
+      display: flex;
+      align-items: end;
+      padding: 5px, 0;
+      text-align: center;
+  }
+
+.select {
+      border-bottom: 8px solid white;
+      margin-bottom: -8px;
+  }
+  header div {
+      margin-bottom: -10px;
+      margin-right: 50px;
+  }
+
+  #flecha {
+      width: 100px;
+      position: relative;
+      left: 50%;
+  }
+
+  form {
+      position: relative;
+      left: 65%;
+      bottom: 80px;
+  }
+  h3,label {
+      font-weight: 100;
+      color: rgb(20, 19, 19);
+      margin: 10px 0;
+      font-size: 14px;
+  }
+  
+  #email {
+      margin-top: 10px;
+  }
+
+  #email,
+  #nombre {
+      background-color: pink;
+      border: none;
+      padding: 5px;
+  }
+
+  #email::placeholder,
+  #nombre::placeholder {
+      color: brown;
+  }
+
+  #enviar {
+      width: 120px;
+      border: 1px solid rgba(197, 180, 238, 0.925);
+      background-color: rgb(248, 170, 156);
+      padding: 5px;
+      margin-top: 5px;
+      border-radius: 5px;
+  }
+</style>
 
 <body>
     <header>
-        <img src="../curso-web-24/CSS/img/ alt="">
-        <p>
-            Restaurante UXP / b125698746
-        </p>
+        <img src="../curso-web-24/CSS/img/logo.png" id="logo">
+        <p>Restaurante UXP | B125698746</p>
         <ul>
             <li class="seleccionado"><a href="">INICIO</a></li>
             <li><a href="">QUIENES SOMOS</a></li>
@@ -23,13 +105,12 @@
         </ul>
     </header>
     <main>
-        <img src="" alt="">
-        <img src="" alt="">
+        <img src="img/spoon.png" id="cuchara">
+        <img src="img/line.png" id="linea">
         <form>
-            <h3>
-                Registro
-            </h3>
-            <input type="text" name="" id="" placeholder="" class=" ">
+            <h3>Registro</h3>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" class="bloque">
+            <input type="text" name="email" id="email" placeholder="email" class="bloque">
             <h3>Comensales</h3>
             <select>
                 <option>1</option>
@@ -39,15 +120,11 @@
                 <option>5</option>
                 <option>6</option>
             </select>
-            <h3> Mesa</h3>
-            <input type="radio" name=" mesa" id="interior"><label for="interior">interior</label>
-            <input type="radio" name="exterior" id="exterior"> <label for="exterior">exterior</label>
+            <h3>Mesa</h3>
+            <input type="radio" name="mesa" id="interior"><label for="interior">Interior</label>
+            <input type="radio" name="mesa" id="exterior"><label for="exterior">Exterior</label>
             <input type="submit" name="enviar" id="enviar" value="ENVIAR" class="bloque">
-
-
         </form>
-
     </main>
 </body>
-
 </html>
