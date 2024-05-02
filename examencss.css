@@ -1,0 +1,63 @@
+
+
+  #caja {
+      width: 800px;
+      height: 600px;
+      background-color: rgb(27, 69, 131);
+      margin: auto;
+      padding: 40px;
+  }
+
+  .select {
+      border-bottom: 8px solid white;
+      margin-bottom: -8px;
+  }
+
+  header div {
+      margin-bottom: -10px;
+      margin-right: 50px;
+  }
+
+  #flecha {
+      width: 100px;
+      position: relative;
+      left: 50%;
+  }
+
+  form {
+      position: relative;
+      left: 65%;
+      bottom: 80px;
+  }
+
+  h3,
+  label {
+      font-weight: 100;
+      color: white;
+      margin: 10px 0;
+      font-size: 14px;
+  }
+#email {
+      margin-top: 10px;
+  }
+
+  #email,
+  #nombre {
+      background-color: pink;
+      border: none;
+      padding: 5px;
+  }
+
+  #email::placeholder,
+  #nombre::placeholder {
+      color: brown;
+  }
+
+  #enviar {
+      width: 120px;
+      border: 1px solid rgba(197, 180, 238, 0.925);
+      background-color: rgb(46, 48, 156);
+      padding: 5px;
+      margin-top: 5px;
+      border-radius: 5px;
+  }
