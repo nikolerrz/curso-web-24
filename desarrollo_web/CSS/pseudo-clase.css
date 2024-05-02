@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ejemplo-div{
+
+}
+
+
+.ejemplo-tooltip p {
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: center;
+}
+.ejemplo-tooltip:hover p {
+display: block;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

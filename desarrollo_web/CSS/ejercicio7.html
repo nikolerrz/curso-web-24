@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,101 +8,102 @@
 </head>
 
 <style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: sans-serif;
+        text-decoration: none;
+        font-family: sans-serif;
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: sans-serif;
-}
+    }
 
-/* Header */
+    body {
+        background-color: black;
+    }
 
+    #site-header {
+        background-color: blueviolet;
+        text-align: center;
+        font-size: 0.9rem;
+    }
 
-#site-header {
-    background-color: #333; /color de fondo/
-    color: #fff; /color de texto/
-    padding: 20px 50px;
-}
+    #site-header nav a {
+        color: aliceblue;
+        font-weight: bold;
+        padding: 10px;
+        display: inline-block;
+        border: 2px solid black;
 
+    }
 
-#site-header nav li {
-     display: inline-block;
-}
+    #site-header nav a:hover {
+        border-bottom: 2px solid red;
+    }
 
+    #site-header nav ul>li>ul {
+        background-color: rgb(102, 133, 72);
+    }
 
-#site-header nav a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bold;
-}
+    #site-header nav ul>li>ul a {
+        color: black;
+        border: 2px solid white;
+    }
 
-#site-main article {
-    padding: 50px;
-    background-color: rgb(222, 140, 154);
-    margin: 45px 0;
-    border-top: 5px solid #333;
-    border-bottom: 5px solid #333;
-}
+    #site-header nav ul>li>ul {
+        display: none;
+    }
 
-#site-main article h2, #site-main article p{
-margin-bottom: 10px;
-}
+    #site-header nav ul>li:nth-child(3):hover>ul {
+        display: block;
+    }
 
-#site-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
+    
 </style>
 
 
 <body>
-    
+
     <header id="site-header">
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="https://www.primor.eu/es_es/marcas">MARCAS</a></li>
+                <li><a href="https://www.primor.eu/es_es/regalos-originales-dia-del-padre">DÍA DEL PADRE</a></li>
+                <li><a href="https://www.primor.eu/es_es/perfumes">PERFUMES</a>
+                    <ul>
+                        <li><a href="https://www.primor.eu/es_es/perfumes-de-mujer">Perfumes de mujer</a>
+                            <ul>
+                                <li><a href="https://www.primor.eu/es_es/agua-de-colonia-para-mujer">Colonias de
+                                        mujer</a></li>
+                                <li><a href="https://www.primor.eu/es_es/cofres-de-perfumes-para-mujer">Cofres de
+                                        perfumes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.primor.eu/es_es/perfumes-para-hombres">Perfumes para hombres</a>
+                            <ul>
+                                <li><a href="https://www.primor.eu/es_es/colonias-para-hombres">Colonias de hombres</a>
+                                </li>
+                                <li><a href="https://www.primor.eu/es_es/cofres-de-perfumes-para-hombre">Cofres de
+                                        perfumes para hombres</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.primor.eu/es_es/perfumes-para-ninos">Perfumes para niños</a></li>
+                        <li><a href="https://www.primor.eu/es_es/aguas-de-colonia">Agua de colonia</a></li>
+                        <li><a href="https://www.primor.eu/es_es/cofres-y-estuches-de-perfumes">Cofres</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MAQUILLAJE</a></li>
+                <li><a href="#">COSMÉTICA</a></li>
+                <li><a href="https://www.primor.eu/es_es/cabello">CABELLO</a></li>
+
+
+
+                <li><a href="https://www.primor.eu/es_es/corporales">CORPORALES</a></li>
             </ul>
         </nav>
     </header>
 
 
-<main id="site-main">
-
-
-       <article>
-            <h2>Título del artículo</h2>
-            <p>Contenido del artículo aquí...</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique deserunt dolorem quos minus. Fugit earum cum voluptas, perferendis libero, laudantium sequi optio ducimus blanditiis sint sapiente assumenda atque maiores?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos perspiciatis iste fugiat asperiores sint! Repudiandae, aperiam. Unde, eum accusantium similique ab vitae consequatur repellendus voluptatibus sit odit incidunt obcaecati magnam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores necessitatibus voluptatibus rerum in delectus accusantium quaerat nihil saepe eligendi. Sapiente autem inventore a, aut at reiciendis recusandae blanditiis atque.</p>
-        </article>
-
-
-        <article>
-            <h2>Título del artículo</h2>
-            <p>Contenido del artículo aquí...</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique deserunt dolorem quos minus. Fugit earum cum voluptas, perferendis libero, laudantium sequi optio ducimus blanditiis sint sapiente assumenda atque maiores?</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos perspiciatis iste fugiat asperiores sint! Repudiandae, aperiam. Unde, eum accusantium similique ab vitae consequatur repellendus voluptatibus sit odit incidunt obcaecati magnam.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus asperiores necessitatibus voluptatibus rerum in delectus accusantium quaerat nihil saepe eligendi. Sapiente autem inventore a, aut at reiciendis recusandae blanditiis atque.</p>
-        </article>
-</main>
-
-
-<footer id="site-footer">
-        <p>Derechos de autor &copy; 2024 - Nombre del Sitio</p>
-</footer>
-
-
-
-
 </body>
+
 </html>
