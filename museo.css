@@ -1,0 +1,17 @@
+header{
+
+}
+
+
+
+header div {
+    width: 100%;
+}
+header div.superior{
+    display: flex;
+    justify-content: space-between;
+}
+header div.inferior{
+
+    
+}
