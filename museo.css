@@ -1,4 +1,18 @@
-header{
+header {
+    color: yellowgreen;
+    background-color: violet;
+    padding: 20px;
+    text-align: center;
+    font-family: "playfayr display";
+
+
+    display: flex;
+    flex direction: "columns";
+    align items: center;
+
+    background-imagen background-position:center;
+    background-size: 200px;
+    background-attachement: required;
 
 }
 
@@ -7,11 +21,31 @@ header{
 header div {
     width: 100%;
 }
-header div.superior{
+
+header div.superior {
     display: flex;
     justify-content: space-between;
 }
-header div.inferior{
 
-    
+header div.inferior {}
+
+header h1 {
+    content: "";
+    margin-bottom: 1px solid withe;
+    width: 120px;
+    height: 1px;
+}
+
+header .inferior h1 {
+    margin: 0 50 px;
+    font-size: 3rem;
+}
+
+header .inferior .linea {
+    width: 150px;
+    border-bottom: 0.1px solid;
+}
+
+header nav .izquierda a span {
+    position: absolute;
 }
