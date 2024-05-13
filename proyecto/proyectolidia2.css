@@ -1,0 +1,129 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+#site-header img {
+    width: 80px;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 10%;
+    align-items: center;
+}
+
+#site-header nav>ul {
+    display: flex;
+}
+
+#site-header ul a {
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+#site-header nav>ul>li {
+    position: relative;
+    margin: 0 20px;
+}
+
+#site-header nav ul li>i {
+    color: rgb(255, 174, 0);
+    position: absolute;
+    bottom: 150%;
+    opacity: 0;
+    left: 45%;
+}
+
+#site-header nav ul li>a:hover+i {
+    bottom: 100%;
+    opacity: 1;
+    transition: opacity 1s, bottom 1s;
+}
+
+#site-header nav ul li i {
+    color: rgb(255, 174, 0);
+}
+
+
+
+#site-header nav ul li ul {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    right: 0;
+    padding-top: 10px;
+    display: none;
+}
+
+#site-header nav>ul li:hover ul {
+    display: block;
+}
+
+
+#sobre-main h1 {
+    margin: 50px;
+    color: rgb(172, 108, 34);
+    font-size: 5rem;
+
+}
+
+#sobre-main .section1 {
+    padding: 15%;
+    background-color: rgb(49, 46, 46);
+    color: white;
+    display: flex;
+    justify-content:space-between;
+}
+
+#sobre-main .section1 div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobre-main .section1 div p{
+    width: 45%;
+}
+
+#site-footer {
+    text-align: center;
+    background-color: rgb(49, 46, 46);
+    color: gray;
+}
+
+#site-footer div>a {
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    border: 2px;
+    color: gray;
+    width: 50px;
+    border-bottom: 2px solid gray;
+}
+
+#site-footer div>a:hover {
+    color: rgb(172, 108, 34);
+    border-bottom: 2px solid rgb(172, 108, 34);
+}
+
+#site-footer p {
+    background-color: rgb(49, 46, 46);
+    padding: 50px;
+}
+#site-section div p {
+    display: flex;
+    justify-content: space-between;
+
+}
+#section-h2 {
+    width: 50%;
+}
