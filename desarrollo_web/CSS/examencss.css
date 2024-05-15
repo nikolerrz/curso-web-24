@@ -1,58 +1,63 @@
-body {
-    background-color: blue;
-    color: white;
-}
 
-img#logo {
-    width: 70px;
-}
 
-img#cuchara {
-    width: 80%;
-}
+  #caja {
+      width: 800px;
+      height: 600px;
+      background-color: rgb(27, 69, 131);
+      margin: auto;
+      padding: 40px;
+  }
 
-img#flecha {
-    width: 120px;
-}
+  .select {
+      border-bottom: 8px solid white;
+      margin-bottom: -8px;
+  }
 
-ul li {
-    list-style: none;
-}
+  header div {
+      margin-bottom: -10px;
+      margin-right: 50px;
+  }
 
-ul a {
-    text-decoration: none;
-    color: wheat;
-}
+  #flecha {
+      width: 100px;
+      position: relative;
+      left: 50%;
+  }
 
-header {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
-}
+  form {
+      position: relative;
+      left: 65%;
+      bottom: 80px;
+  }
 
-header ul {
-    display: flex;
-    text-align: center;
-    align-items: flex-end;
-    font-weight: 30px;
-    line-height: 10px;
-}
+  h3,
+  label {
+      font-weight: 100;
+      color: white;
+      margin: 10px 0;
+      font-size: 14px;
+  }
+#email {
+      margin-top: 10px;
+  }
 
-header ul li {
-    padding: 2px;
-    padding-bottom: 5px;
-    list-style-type: none;
-    line-height: 20px;
-}
+  #email,
+  #nombre {
+      background-color: pink;
+      border: none;
+      padding: 5px;
+  }
 
-header div#contenedor-logo {
-    display: flex;
-    flex-direction: row;
-}
+  #email::placeholder,
+  #nombre::placeholder {
+      color: brown;
+  }
 
-header div p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 50px;
-    font-size: 0.9px;
-    width: 195px;
-}
+  #enviar {
+      width: 120px;
+      border: 1px solid rgba(197, 180, 238, 0.925);
+      background-color: rgb(46, 48, 156);
+      padding: 5px;
+      margin-top: 5px;
+      border-radius: 5px;
+  }
