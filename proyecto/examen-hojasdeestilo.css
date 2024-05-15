@@ -5,31 +5,45 @@
     text-decoration: none;
     list-style: none;
 }
-#site-header {
-    background-color: #f1e3e3;
-    color: white;
-    padding: 15px;
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
+.contenedor-principal {
+    background-color: #333;
+    padding: 0 20px;
 }
-#site-header nav ul {
+.contenedor-principal header {
+    background-color: aliceblue;
+}
+.contenedor-principal header nav ul {
     display: flex;
-    width: 100px 50px;
 }
-
-
-
-
+.contenedor-principal header nav ul a {
+    padding: 20px;
+    color: black;
+    display: inline-block;
+    font-weight: bold;
+}
+main {
+    background-color: white;
+    width: 70%;
+}
 img {
     width: 100%;
 }
-
+main section {
+    padding: 25px 16px;
+}
+main section p {
+    margin: 16px 0;
+    line-height: 30px;
+}
 aside {
     background-color: mediumaquamarine;
     padding: 50px;
     height: 150px;
     width: calc(30% - 100px);
+}
+aside h4 {
+    font-size: 1.6rem;
+    padding-bottom: 25px;
 }
 aside ul li {
     border-bottom: 2px solid black;
