@@ -1,64 +1,82 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-decoration: none;
     list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.contenedor-principal {
-    background-color: #333;
+
+.contenedorPrincipal{
+    background-color: rgba(0, 0, 0, 0.39);
     padding: 0 20px;
 }
-.contenedor-principal header {
-    background-color: aliceblue;
+
+
+img{
+    width: 100%
 }
-.contenedor-principal header nav ul {
-    display: flex;
+
+header{
+    background-color: whitesmoke;
 }
-.contenedor-principal header nav ul a {
-    padding: 20px;
+header ul{
+display: flex;
+}
+
+header a{
     color: black;
-    display: inline-block;
     font-weight: bold;
+    padding: 20px;
+   display:inline-block;
 }
-main {
-    background-color: white;
+
+main{
+  background-color: white;  
+}
+
+main{
     width: 70%;
+    background-color: white;
 }
-img {
-    width: 100%;
+
+section{
+    padding: 30px 20px;
 }
-main section {
-    padding: 25px 16px;
+
+section h1, section p{
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
-main section p {
-    margin: 16px 0;
-    line-height: 30px;
-}
-aside {
-    background-color: mediumaquamarine;
+
+aside{
+    background-color: aquamarine;
     padding: 50px;
     height: 150px;
     width: calc(30% - 100px);
 }
-aside h4 {
-    font-size: 1.6rem;
-    padding-bottom: 25px;
+
+aside h4{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
 }
-aside ul li {
+
+aside ul li{
     border-bottom: 2px solid black;
     margin-bottom: 15px;
     font-weight: bold;
+    
 }
-footer {
-    background-color: violet;
-    padding: 50px;
+
+footer{
+    background-color: rgb(216, 26, 89);
     color: white;
+    font-size: 1.2rem;
     text-align: center;
+    padding: 50px;
     width: calc(70% - 100px);
-    font-weight: bold;
 }
-.dos {
+
+.dos{
     display: flex;
     flex-wrap: wrap;
 }
