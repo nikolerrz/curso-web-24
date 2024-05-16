@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto_Nombre</title>
+    <meta name="description" content="Proyecto final HTML CSS -Index">
+    <!-- Css -->
+    <link rel="stylesheet" href="proyectolidia2.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.google.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googlelapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: "Roboto";
+            list-style: none;
+            letter-spacing: 2px;
+        }
+
+        .fa-caret-down {
+            color: chocolate;
+        }
+
+        body #index-main h1 {
+            padding: 20px;
+            margin: 20px;
+        }
+
+        a {
+            color: black;
+
+        }
+
+        #site-header nav ul {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            margin: 10px;
+            padding-top: 20px;
+        }
+
+        #site-header nav ul li {
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+
+        }
+
+
+
+        /* flecha */
+        #site-header nav ul li>i {
+            position: absolute;
+            bottom: 150%;
+            opacity: 0;
+            left: 45%;
+            color: chocolate;
+        }
+
+        /* flecha */
+
+        #site-header nav ul li a {
+            color: rgb(118, 118, 118);
+
+        }
+
+        #site-header img {
+            width:7%;
+            margin: 11px;
+            padding: 10px;
+           
+           
+        }
+
+
+        #index-main h1 span {
+            background-color: rgb(218, 113, 39);
+
+        }
+
+        #index-main span:hover {
+            background-color: white;
+            transition: 0.5s;
+        }
+
+        #index-main video {
+            width: 100%;
+
+        }
+
+        /* flecha */
+        #site-header nav ul li>a:hover+i {
+            bottom: 100%;
+            opacity: 1;
+            transition: opacity 1s, bottom 1s;
+        }
+
+        /* flecha */
+
+        #dos-videos {
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #dos-videos article {
+            width: 50%;
+        }
+
+
+        #dos-videos div p:hover {
+            color: chocolate;
+        }
+
+        img,
+        video {
+            width: 100%;
+        }
+
+        #fotos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #fotos article {
+            width: 50%;
+        }
+
+
+        /* flechas derecha */
+        /* obligatorio translate 0 y opacity 1 */
+        #index-main article i {
+            margin-left: 5px;
+            color: chocolate;
+            translate: 0px;
+            opacity: 1;
+        }
+
+        #index-main article p:hover {
+            color: chocolate;
+            transition: color 0.8s;
+        }
+
+        /* con este selector le decimos que cuando haga algo en el hover pasará algo con la I y lo va a mover 40px a la derecha */
+        #index-main article p:hover i {
+            transition: translate 1s, opacity 1s;
+            translate: 40px;
+            opacity: 0;
+        }
+
+        /* flechas derecha */
+
+
+
+        /* DESPLEGAR */
+        #site-header nav ul li ul {
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            display: none;
+            right: 0;
+        }
+
+
+        #site-header nav>ul li:last-child:hover ul {
+            display: block;
+        }
+
+        /* DESPLEGAR */
+
+        .iavideojuegos,
+        .tecno,
+        .burbujas2,
+        .pato,
+        .arbol {
+            margin: 20px 0px;
+        }
+
+
+
+        .proyectos-realizados {
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+        }
+
+        .proyectos-realizados a {
+            display: inline-block;
+            text-align: center;
+            border: solid black 2px;
+            padding: 10px;
+
+        }
+
+        .proyectos-realizados a:hover {
+            transition: 1s;
+            background-color: black;
+            color: chocolate;
+
+        }
+
+        .nuestros {
+            text-align: center;
+
+        }
+
+        .nuestros span {
+            background-color: chocolate;
+
+        }
+
+        #site-footer {
+            text-align: center;
+
+        }
+
+        #site-footer div {
+            padding-top: 50px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            background-color: rgb(61, 60, 60);
+            height: 200px;
+
+        }
+
+        #site-footer div a {
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            padding: 10px;
+            border-bottom: 2px solid white;
+
+        }
+
+
+        #site-footer div i:hover {
+            color: chocolate;
+        }
+
+        /* SOBRE NOSOTROS */
+
+
+
+        .h1nosotros {
+            color: chocolate;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            margin-left: 41px;
+
+        }
+
+
+        #sobre-main .seccion1 .div1nosotros {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+
+
+        }
+
+        #sobre-main .seccion1 .div1nosotros p {
+            color: white;
+            width: 45%;
+            line-height: 1rem;
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+
+        .div1nosotros p:first-child {
+            border-bottom: 2px solid chocolate;
+        }
+
+
+        #sobre-main .seccion1 {
+            background-color: rgb(59, 55, 55);
+            position: relative;
+            padding: 5%;
+        }
+
+        /* NUESTRA HISTORIA */
+
+        #sobre-main section:nth-child(2) h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            margin-left: 40px;
+
+
+        }
+
+        #sobre-main section:nth-child(2) {
+            padding: 5%;
+
+        }
+
+
+        #sobre-main section:nth-child(2) .historia1 {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0%;
+
+
+        }
+
+        #sobre-main section:nth-child(2) .historia1 p {
+            padding: 20px;
+            margin: 20px;
+            width: 45%;
+            line-height: 1rem;
+            letter-spacing: 3px;
+            font-size: 16px;
+        }
+
+        .fotoempresa {
+            padding: 0 5% 5% 5%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        /* NUESTROS VALORES */
+
+
+        #sobre-main section:last-child h2 {
+            font-size: 1.8rem;
+            margin-left: 20px;
+        }
+
+        #sobre-main .valores {
+            display: flex;
+            margin: 20px;
+        }
+
+        #sobre-main .valores div {
+            margin: 10px;
+            width: 22%;
+            justify-content: space-between;
+        }
+
+        #sobre-main .valores i {
+            color: chocolate;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        #site-aside {
+            background-color: black;
+            color: white;
+            margin-top: 50%;
+            padding: 20px;
+            text-align: center;
+            font-size: 10px;
+            position: fixed;
+            bottom: 0;
+
+
+        }
+
+        #site-aside h2 {
+            margin: 20px;
+        }
+
+        #site-aside form {
+            margin: 20px;
+
+        }
+
+        #site-aside form input {
+            background-color: chocolate;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .active {
+            border-bottom: chocolate;
+        }
+
+        #proyecto-main {
+            margin-top: 30px;
+        }
+
+        .seccionproyectos h1 {
+            color: chocolate;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 3rem;
+        }
+
+        .seccionproyectos .div1proyectos {
+            width: 100%;
+            height: 300px;
+            background-color: rgb(65, 61, 61);
+            padding: 50px;
+            margin-bottom: 50px;
+
+        }
+
+        .multimedia {
+            padding: 5%;
+        }
+
+        .seccionproyectos .div1proyectos p {
+            color: white;
+            border-bottom: 2px solid chocolate;
+            width: 20%;
+
+
+        }
+
+        /* flechas derecha */
+        /* obligatorio translate 0 y opacity 1 */
+        #proyecto-main article i {
+            margin-left: 5px;
+            color: chocolate;
+            translate: 0px;
+            opacity: 1;
+        }
+
+        #proyecto-main article p:hover {
+            color: chocolate;
+            transition: color 0.8s;
+        }
+
+        /* con este selector le decimos que cuando haga algo en el hover pasará algo con la I y lo va a mover 40px a la derecha */
+        #proyecto-main article p:hover i {
+            transition: translate 1s, opacity 1s;
+            translate: 40px;
+            opacity: 0;
+        }
+
+        .hola h2 span {
+            background-color: rgb(218, 113, 39);
+
+        }
+
+
+        /* flechas derecha */
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <header id="site-header">
+        <a href="index.html" title="logo"><img src="../img/videos/logo.png" alt="logo.proyecto"></a>
+        <nav>
+            <ul>
+                <li><a href="nosotros.html">NOSOTROS</a><i class="fa-solid fa-caret-down"></i></li>
+                <li><a href="proyectos.html">PROYECTOS</a><i class="fa-solid fa-caret-down"></i></li>
+                <li><a href="index.html">ES<i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="en/index.html">EN</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="index-main">
+        <h1><span>Desarrollamos marcas audaces</span> y narrativas <br> que prosperan en la transformación de las <br>
+            culturas y tecnologías.</h1>
+
+        <section>
+            <article>
+                <a href="#" title="Detalles">
+                    <video src="../img/videos/ia.mp4" loop autoplay muted></video>
+                    <div>
+                        <h2>Uso de IA en Videojuegos</h2>
+                        <p>Detalles del proyecto <i class="fa-solid fa-caret-right"></i></p>
+                    </div>
+                    <a href="#"></a>
+            </article>
+            <div>
+                <article>
+                    <a href="#" title="Detalles">
+                        <video src="../img/videos/Tec.mp4" loop autoplay muted></video>
+                        <div>
+                            <h3>Tecnología Moderna</h3>s
+                            <p>Detalles del proyecto <i class="fa-solid fa-caret-right"></i></p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="Detalles">
+                        <video src="../img/videos/bur.mp4" loop autoplay muted></video>
+                        <div>
+                            <h3>Burbujas</h3>
+                            <p>Detalles del proyecto <i class="fa-solid fa-caret-right"></i></p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="Detalles">
+                        <img src="../img/naturaleza.jpg" alt="magia">
+                        <div>
+                            <h3>Magía</h3>
+                            <p>Detalles del proyecto <i class="fa-solid fa-caret-right"></i></p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#" title="Detalles">
+                        <a href="#">
+                            <img src="../img/videos/magia.jpg" alt="naturaleza">
+                            <div>
+                                <h3>Naturaleza</h3>
+                                <p>Detalles del proyecto <i class="fa-solid fa-caret-right"></i></p>
+                            </div>
+                        </a>
+                </article>
+            </div>
+            <div id="boton">
+                <a href="#">Proyectos Realizados <i class="fa-solid fa-caret-right"></i></a>
+            </div>
+        </section>
+        <section class="hola">
+            <h2> <span>Nuestros servicios </span> abarcan todo el ciclo de vida de una marca, lo que nos permite
+                potenciar tu imagen corporativa, cultura empresarial y resultados comerciales.</h2>
+        </section>
+</body>
+</main>
+<aside id="site-aside">
+    <h2>Esta página web usa cookies</h2>
+    <p>Este sitio web utiliza cookies para adaptar el contenido y los anuncios, proporcionar funciones de redes sociales
+        y analizar el tráfico. También compartimos información sobre su uso del sitio web con nuestros socios de redes
+        sociales, publicidad y análisis web. Estos socios pueden combinarla con otra información que les haya
+        proporcionado o que hayan recopilado mientras utilizaba sus servicios.</p>
+    <form action="#">
+        <input type="button" value="Permitir">
+        <input type="button" value="Denegar">
+    </form>
+</aside>
+<footer id="site-footer">
+    <div>
+        <a href="https://www.facebook.com/?locale=es_ES" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://es.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <p>© 2024 Nombre - TODOS LOS DERECHOS RESERVADOS</p>
+</footer>
+
+</html>
