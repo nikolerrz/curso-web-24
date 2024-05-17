@@ -17,3 +17,9 @@ console.log ( edad * 15 )
 
     console.log ( 8 / 9 )
     console.log ( edad / 3)
+
+    console.log (221%2);
+    console.log (210/2 )
+    console.log (221%2);
+    console.log (edad %2 )
+
