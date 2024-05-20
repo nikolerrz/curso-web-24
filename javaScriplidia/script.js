@@ -1,25 +1,35 @@
-//Empiece
-let nombre = "nikole";
-let edad = 27 ; 
+// operadores de asignacion
 
-console.log("soy, " + nombre + " y tengo " + 27);
+let x = 20;
+let y = 10;
+let z = 22;
+let a = 60;
 
-// operadores matematicos//
-console.log ( 3 + 8 )
-console.log ( edad + 8)
+x += 6; // x =x + 6
+y -= 5; // y = y -5
+z*= 2;  // z = z * 2
+a /= 2; // a = a /2
 
-console.log ( 8 - 15 )
-console.log ( edad-15)
+console.log(x);
+console.log(y);
+console.log(z);
+console.log(a);
+
+//comparacion de Valores
+
+let valor = 5;
 
 
-console.log ( 8 * 10 )
-console.log ( edad * 15 )
+console.log ( valor == 5);
 
-    console.log ( 8 / 9 )
-    console.log ( edad / 3)
+console.log ( valor < 10);
 
-    console.log (221%2);
-    console.log (210/2 );
-    console.log (221%2);
-    console.log (edad %2 )
+//
+
+let nombre = prompt ("Por favor, ingresa tu nombre:"); //lo guardas en la variable
+let apellido = prompt ("porfavor ingresa tu apellido");
+
+
+
+console.log("¡Hola, " + nombre + " " +  apellido + "!");
 
