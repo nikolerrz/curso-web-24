@@ -1,32 +1,32 @@
-*{
+* {
 
     margin: 0;
     padding: 0;
 
 }
 
-body{
+body {
 
-    background-color:cornflowerblue;
+    background-color: cornflowerblue;
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.contenedor{
+div.contenedor {
 
-text-align: center;
-padding: 50px 20px;
+    text-align: center;
+    padding: 50px 20px;
 
 }
 
-div.contenedor{
+div.contenedor {
 
     margin: 10px 5px;
 }
 
-.contenedor button{
+.contenedor button {
 
     padding: 10px 25px;
     color: white;
@@ -34,17 +34,17 @@ div.contenedor{
     background-color: pink;
     border: none;
     border-radius: 3px;
-    box-shadow: 0 2px plum ;
+    box-shadow: 0 2px plum;
 
 }
 
-.contenedor button:hover{
+.contenedor button:hover {
 
     cursor: pointer;
 
 }
 
-.contenedor button:active{
+.contenedor button:active {
 
     box-shadow: none;
     transform: translateY(2px);
@@ -53,9 +53,13 @@ div.contenedor{
 
 }
 
-#completo{
+#completo {
 
-    /* opacity: 0; */
+       opacity: 0;
     background-color: rgba(255, 0, 0, 0.6);
     padding: 20px;
-    border-radius: 5px;}
+    border-radius: 5px;
+    
+}
+
+    
