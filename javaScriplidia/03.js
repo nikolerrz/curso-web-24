@@ -17,13 +17,16 @@ console.log("Los datos introducidos son " + datosCorrectos);
 
 
 // Pedimos al usuario que ingrese su edad usando prompt
-let edad = prompt("Por favor, ingrese su edad:");
+let edad = prompt("introduce tu edad:");
 
 // Convertimos la entrada del usuario a un número entero
 edad = parseInt(edad);
 
 // Verificamos si la edad está dentro del rango permitido (entre 18 y 65 años, inclusive)
 let edadPermitida = edad >= 18 && edad <= 65;
+
+
+
 
 
 
