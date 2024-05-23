@@ -65,10 +65,10 @@ let alumna4 = "natalia"
 
  const paises = [] ; 
 
- paises = "Bolivia" ; 
- paises = "Italia" ; 
- paises = "filandia" ; 
- paises = "tailanda" ;
+ paises = "Bolivia"; 
+ paises = "Italia"; 
+ paises = "filandia"; 
+ paises = "tailanda";
  
  console.log(paises);
 
