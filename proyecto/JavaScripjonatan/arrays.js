@@ -63,3 +63,12 @@ let alumna4 = "natalia"
  //lista alumnas.lenght = 4 
  //luego le restamos para que el numero coincida con el ultimo indice ,que en este caso seria 3
 
+ const paises = [] ; 
+
+ paises = "Bolivia" ; 
+ paises = "Italia" ; 
+ paises = "filandia" ; 
+ paises = "tailanda" ;
+ 
+ console.log(paises);
+

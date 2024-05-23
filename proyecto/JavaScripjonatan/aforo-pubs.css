@@ -52,7 +52,23 @@ div.contenedor {
 
 
 }
+/* creamos  una clase que el boton se inabilite visualmente */
+.contenedor button.inactivo{
+background-color: violet;
+color: violet;
+box-shadow: none;
+transform: translate(2px);
+cursor: default;
 
+}
+
+.contenedor button.activoo{
+    background-color: violet;
+    color: violet;
+    box-shadow: none;
+    transform: translate(2px);
+cursor: default;
+  }
 #completo {
 
        opacity: 0;
