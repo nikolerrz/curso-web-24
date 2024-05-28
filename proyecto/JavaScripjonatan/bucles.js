@@ -1,4 +1,4 @@
-console.log('Bucles');
+//console.log('Bucles');
 
 // Los bucles son operaciones que se repiten un número determinado de veces (vueltas)
 // Son muy útiles cuando queremos ejecutar el mismo código repetidamente, pero cada vez con un valor diferente
@@ -12,7 +12,7 @@ console.log('Bucles');
 
 // 3. Indica la dirección del conteo. Aumenta o disminuye (cuenta atrás)
 
-for (let i = 0; i < 5; i++) {
+/*for (let i = 0; i < 5; i++) {
     // console.log(i);
 }
 
@@ -36,7 +36,7 @@ const coches = [
 
 
 //imprimir este arrays en el parrafo del HTML
-const parrafo = document.getElementById('pTexto');
+//const parrafo = document.getElementById('pTexto');
 
 // texto =  coches[0] + "<br>";
 // texto =  coches[1] + "<br>";
@@ -48,13 +48,13 @@ const parrafo = document.getElementById('pTexto');
 
 // texto += coches [1];
 
- let texto = "<ul>";
+ //let texto = "<ul>";
 
- for (let i = coches.length;  i> 0; i--){
-    texto += "<li>" + coches [ i - 1 ] + "</li>"};
+ //for (let i = coches.length;  i> 0; i--){
+   // texto += "<li>" + coches [ i - 1 ] + "</li>"};
 
-    texto +- "/ul";
-     parrafo.innerHTML = texto 
+   // texto +- "/ul";
+   //  parrafo.innerHTML = texto 
 
      //imprimir en consola el siguiente ejercicio:
      //dado un numero, se imprimira en la consola ese numero de lineas
@@ -84,9 +84,9 @@ const parrafo = document.getElementById('pTexto');
     console.log ("Cuenta atras desde " + numero);
 
  //contar hasta el numero, solo pares :
- console.log ( "contar pares hasta " + numero)
-for ( let i = 2; i <= numero; i +=2) {
-  console.log (i);}
+ //console.log ( "contar pares hasta " + numero)
+//for ( let i = 2; i <= numero; i +=2) {
+  //console.log (i);}
 
 
 //Imprimir los multiplos de un numero 
@@ -96,4 +96,17 @@ multiplo = 3;
 console.log ("multiplos del" + multiplo + "hasta el " + numero)
 for ( let i = multiplo; i <= numero; i += multiplo) {
     console.log (i);
+}*/
+
+
+
+
+//----uso de let en un for----
+let i = 0;
+
+for (let i = 0; i < 5; i) {
+  console.log("i del for:" + i)
 }
+console.log("i fuera del for" + i );
+
+//las dos variables, al ser declaradas con let , tienen un solo alcance de bloque . es decir que solo se ven afectadas por el codigo de su propio bloque 
