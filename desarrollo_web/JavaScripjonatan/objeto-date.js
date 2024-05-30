@@ -1,4 +1,4 @@
-console.log('objeto date()');
+console.log('objeto date ()');
 
 //el objeto date() (Fecha) nos deja trabajar con fechas en javaCript
 
@@ -95,7 +95,7 @@ const meses = [
 //fecha.Date() = 4
 //por lo tanto, lo de abajo equivale a :
 //dias [4]
-console.log [dias[fecha.getDay()]];
+console.log[dias[fecha.getDay()]];
 
 //Fecha.getNOnth () = 9
 //este numero equivale al mes de octubre
@@ -103,8 +103,94 @@ console.log [dias[fecha.getDay()]];
 console.log(fecha.getMonth());
 
 //otros metodos get (tomar)
-let fechaActual = new Date ();
+let fechaActual = new Date();
 //hora, munutos y segundos
 console.log(fechaActual.getHours());
 console.log(fechaActual.getMinutes());
 console.log(fechaActual.getUTCSeconds());
+
+
+//-----MEtodos ser ------
+//se usan para establecer datos en una fecha
+
+//calcular un dia en ms 
+//1000ms * 60s * 60m * 24h
+console.log(1000 * 60 * 60 * 24)
+
+let fechaHoy = new Date();
+console.log(new Date(fechaHoy - 86400000));
+
+//18 amos en ms
+///18años * 365 dias * 24h * 60m * 60s * 1000ms
+let años18 = new Date((18 * 365 * 24 * 60 * 60 * 1000)
+    + (4 * 24 * 60 * 60 * 1000));
+console.log(años18);
+
+//------Metodos set-----
+//se usan para establecer datos en una fecha 
+fecha = new Date ();
+
+//setFullYear permite establecer el año de una fecha , tambien podemos establecer el año, mes y dia
+fecha.setFullYear (2018);
+console.log(fecha);
+
+fecha.setFullYear (2002, 2, 25);
+console.log(fecha);
+
+
+//establecer mes o el dia dolamente 
+// el mes se establece con setMonth() 0-11
+//el dia del mes se establece con setDate() 1-31
+
+fecha.setMonth(6);
+fecha.setDate (8);
+console.log (fecha);
+
+//ejemplo practico
+//queremos realizar una reserva en un hotel el dia 15 de agosto para 3 dias
+
+let fechaEntrada;
+let fechaSalida;
+
+fechaEntrada = new Date ('2024-08-15');
+fechaEntrada = new Date (2024, 7, 15);
+console.log (fechaEntrada);
+
+//con esto las dos fechar parten del dia 15 de agosto
+
+fechaSalida = fechaEntrada;
+//usamos setDate() para establecer el dia de la fecha de salida 
+//dentro del parentesis tomamos el dia de la fecha de entrada y le sumamos 3 
+fechaSalida.setDate(fechaEntrada.getDate() + 3);
+console.log(fechaSalida);
+
+//ejemplo 2  // a un trabajador se le vence el contrato el 18 de junio
+//le han dicho que se lo van a renovar por 18 meses 
+//calcular la nueva fecha de vencimiento usando el objeto Date()
+//fecha en la que se inicia el nuevo contrato
+let fechaInicio;
+//fecha en la que la finaliza el nuevo contratio 
+let fechaFin;
+
+fechaInicio = new Date ('jun 18,2024');
+fechaFin = fechaInicio;
+fechaFin.setMonth(fechaInicio.getMonth() + 18);
+console.log(fechaFin);
+
+
+//ejemplo3 - alarma
+let alarma =new Date ();
+
+alarma.setHours(11);
+alarma.setMinutes(20);
+
+function saltarAlarma () {
+if(alarma <= Date ()) {
+    alert("Hora del descanso!!");
+}
+
+    setTimeout(saltarAlarma,1000);
+}
+
+alert('Esto es una alerta');
+
