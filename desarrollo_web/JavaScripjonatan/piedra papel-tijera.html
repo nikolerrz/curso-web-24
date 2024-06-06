@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego piedra, papel, tijera</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    body{
+        background-color: rgb(247, 194, 199);
+    }
+    button{
+        font-size: 8rem;
+        padding: 20px;
+        margin: 10px;
+        width: 12rem;
+        height: 12rem;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(209, 165, 245);
+    }
+    button:nth-child(3){
+        transform: rotate(90deg);
+
+    }
+</style>
+<body>
+    <button id="btn-piedra" onclick="elegir('piedra')"><i class="fa-regular fa-hand-back-fist"></i></button>
+    <button id="btn-papel" onclick="elegir('papel')"><i class="fa-regular fa-hand"></i></button>
+    <button id="btn-tijera" onclick="elegir('tijera')"><i class="fa-regular fa-hand-scissors"></i></button>
+</body>
+<script src="piedra-papel-tijera.js"></script>
+</html>

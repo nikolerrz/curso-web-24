@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPT2"</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #choices {
+            margin: 20px;
+        }
+        .choice {
+            font-size: 20px;
+            margin: 10px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Piedra, Papel o Tijera</h1>
+    <div id="choices">
+        <button class="choice" onclick="jugar('piedra')">Piedra</button>
+        <button class="choice" onclick="jugar('papel')">Papel</button>
+        <button class="choice" onclick="jugar('tijera')">Tijera</button>
+    </div>
+    <div id="result"></div>
+
+    <script src="PPT2.js"></script>
+</body>
+</html>
