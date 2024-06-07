@@ -29,6 +29,9 @@ for (let i = 0; i < longitud; i++) {
 console.log("palabra oculta: " + palabraOculta);
 
 //tienes que averiguar la palabra 
+function jugar (letra) {
+    console.log(letra);
+}
 
 //tienes que adivinar las letras de la palabra
 
