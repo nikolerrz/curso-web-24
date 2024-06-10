@@ -33,7 +33,12 @@ function jugar (letra) {
     console.log(letra);
 }
 
+
 //tienes que adivinar las letras de la palabra
+
+
+
+
 
 //si dices una letra que no esta en la palabra pierdes una vida 
 
