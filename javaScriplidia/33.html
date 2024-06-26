@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Habilitar Botones</title>
     <link rel="stylesheet" href="33.1.css">
 </head>
 <body>
     <form action="#">
-<select id="opciones" onchange="actualizarTexto">
-<option value=""></option>
-<option value=""></option>
-<option value=""></option>
-<option value=""></option>
-
-</select>
-<br>
-<input type="text" id="cajaTExto">
-
+        <select id="opciones" onchange="actualizarTexto()">
+            <option value="">Seleccione una opción</option>
+            <option value="option1">Opción 1</option>
+            <option value="option2">Opción 2</option>
+            <option value="option3">Opción 3</option>
+            <option value="option4">Opción 4</option>
+        </select>
+        <br>
+        <input type="text" id="cajaTexto" placeholder="Escribe algo...">
+        <br>
+        <button type="button" id="boton1" onclick="deshabilitarBoton(1)" disabled>Botón 1</button>
+        <button type="button" id="boton2" onclick="deshabilitarBoton(2)" disabled>Botón 2</button>
+        <button type="button" id="boton3" onclick="deshabilitarBoton(3)" disabled>Botón 3</button>
+        <button type="button" id="boton4" onclick="deshabilitarBoton(4)" disabled>Botón 4</button>
     </form>
-
+    <script src="33.1.js"></script>
 </body>
-<script src="33.1.js"></script>
 </html>

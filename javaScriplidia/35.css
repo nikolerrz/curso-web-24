@@ -1,0 +1,86 @@
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+header, footer {
+    background-color: #1e2885;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 04px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+   
+    padding: 20px;
+    width: 80%;
+    height: 70vh;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 04px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    background-color: #1a69c4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+    transition: left 1s, opacity 1s ;
+    left: -100%;
+    opacity: 0;
+}
+
+h1 {
+    margin: 5.5px;
+}
+
+h2 {
+    color: #020303;
+    padding: 100px;
+   
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding:20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 04px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #004d40;
+}
+#site-footer {
+    background: color #6200ea; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px -8px rgba(0, 0, 0, 0.2);
+}
+p.id {
+    font-size: 18px;
+    margin-top: 20px; 
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
