@@ -121,7 +121,7 @@ header div.logo-container a {
 
 /* banner */
 div.banner-container {
-    background-image: url(/desarrollo_web/JavaScripjonatan/gucci/img/gucci.jpg);
+    background-image: url(gucci.jpg);
     background-size: cover;
     background-position: center;
     height: 1000px;

@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>37</title>
+    <title>Blog</title>
     <link rel="stylesheet" href="37.css">
+    <!-- Enlace a la biblioteca de FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
     <header>
+        <p>Blog Peronal</p>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -18,50 +21,87 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="inicio">
-            <h1>Bienvenido al Blog de Lidia</h1>
-        </section>
-        <section id="blog">
-            <h2>Entradas del Blog</h2>
-            <div class="post">
-                <h3>Primer Post</h3>
-                <img src="../desarrollo_web/img/8-2.jpg" alt="Imagen del primer post">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus et quam feugiat faucibus.
-                    Phasellus sed maximus leo. Sed non mauris libero.</p>
-                <span class="comments">0 comentarios</span>
-                <span class="date">Publicado el 1 de Julio, 2024</span>
-            </div>
-            <div class="post">
-                <h3>Segundo Post</h3>
-                <img src="../desarrollo_web/img/8-3.jpg" alt="Imagen del segundo post">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus et quam feugiat faucibus.
-                    Phasellus sed maximus leo. Sed non mauris libero.</p>
-                <span class="comments">15 comentarios</span>
-                <span class="date">Publicado el 3 de Julio, 2024</span>
-            </div>
-            <div class="post">
-                <h3>Tercer Post</h3>
-                <img src="../desarrollo_web/img/8-4.jpg" alt="Imagen del tercer post">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus et quam feugiat faucibus.
-                    Phasellus sed maximus leo. Sed non mauris libero.</p>
-                <span class="comments">0 comentarios</span>
-                <span class="date">Publicado el 5 de Julio, 2024</span>
-            </div>
-            <div class="post">
-                <h3>Cuarto Post</h3>
-                <img src="../desarrollo_web/img/8-6.jpg" alt="Imagen del cuarto post">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis purus et quam feugiat faucibus.
-                    Phasellus sed maximus leo. Sed non mauris libero.</p>
-                <span class="comments">0 comentarios</span>
-                <span class="date">Publicado el 8 de Julio, 2024</span>
-            </div>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Para más información, contáctame en miemail@dominio.com</p>
-        </section>
+
+    <main id="site-main">
+        <div class="grid-container">
+            <article class="post">
+                <h2>Primer post</h2>
+                <div class="image-container">
+                    <img src="../desarrollo_web/img/8-2.jpg" alt="Imagen del primer post">
+                    <div class="like-section">
+                        <i class="fab fa-gratipay"></i>
+                        <span class="contador">0</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates iste iusto obcaecati,
+                    distinctio ipsa veniam esse suscipit possimus consectetur? Excepturi, voluptatibus tempora
+                    consectetur
+                    nostrum nesciunt culpa esse voluptas vitae?</p>
+                <div class="post-meta">
+                    <p>Publicado el 1 de Julio, 2024</p>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2>Segundo post</h2>
+                <div class="image-container">
+                    <img src="../desarrollo_web/img/8-3.jpg" alt="Imagen del segundo post">
+                    <div class="like-section">
+                        <i class="fab fa-gratipay"></i>
+                        <span class="contador">0</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates iste iusto obcaecati,
+                    distinctio ipsa veniam esse suscipit possimus consectetur? Excepturi, voluptatibus tempora
+                    consectetur
+                    nostrum nesciunt culpa esse voluptas vitae?</p>
+                <div class="post-meta">
+                    <p>Publicado el 2 de Julio, 2024</p>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2>Tercer post</h2>
+                <div class="image-container">
+                    <img src="../desarrollo_web/img/8-4.jpg" alt="Imagen del tercer post">
+                    <div class="like-section">
+                        <i class="fab fa-gratipay"></i>
+                        <span class="contador">0</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates iste iusto obcaecati,
+                    distinctio ipsa veniam esse suscipit possimus consectetur? Excepturi, voluptatibus tempora
+                    consectetur
+                    nostrum nesciunt culpa esse voluptas vitae?</p>
+                <div class="post-meta">
+                    <p>Publicado el 3 de Julio, 2024</p>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2>Cuarto post</h2>
+                <div class="image-container">
+                    <img src="../desarrollo_web/img/8-6.jpg" alt="Imagen del cuarto post">
+                    <div class="like-section">
+                        <i class="fab fa-gratipay"></i>
+                        <span class="contador">0</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates iste iusto obcaecati,
+                    distinctio ipsa veniam esse suscipit possimus consectetur? Excepturi, voluptatibus tempora
+                    consectetur
+                    nostrum nesciunt culpa esse voluptas vitae?</p>
+                <div class="post-meta">
+                    <p>Publicado el 4 de Julio, 2024</p>
+                </div>
+            </article>
+        </div>
     </main>
+
+    <footer id="site-footer">
+        <p>&copy; 2024 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+
     <script src="37.js"></script>
 </body>
 
