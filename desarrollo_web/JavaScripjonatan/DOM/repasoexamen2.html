@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculad                                     ora</title>
+</head>
+<body>
+        <div class="calculadora">
+            <input type="text" class="pantalla" id="pantalla" disabled>
+            <div class="botones">
+                <button class= "btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn" >9</button>
+                <button class="boton boton-operador" onclick="agregarValor('/')">/</button>
+    
+                <button class="btn" >4</button>
+                <button class="btn">5</button>
+                <button class="btn" >6</button>
+                <button class="boton boton-operador" onclick="agregarValor('*')">*</button>
+    
+                <button class="btn" >1</button>
+                <button class="btn" >2</button>
+                <button class="btn" >3</button>
+                <button class="btn" boton-operador" onclick="agregarValor('-')">-</button>
+    
+                <button class="boton" >0</button>
+                <button class="boton" >.</button>
+                <button class="btn" onclick="calcular()">=</button>
+                <button class="btn" onclick="agregarValor('+')">+</button>
+    
+                <button class="btn" onclick="limpiar()">C</button>
+            </div>
+        </div>
+</body>
+<script src="repasoexam.js"></script>
+</html>
