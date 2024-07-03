@@ -1,0 +1,16 @@
+.caja {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(224, 141, 47);
+    color: #000;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-family: sans-serif;
+    transition: left 2s;
+}
+
+.mover {
+    left: calc(100% - 100px);
+    transition: left 2s;
+}

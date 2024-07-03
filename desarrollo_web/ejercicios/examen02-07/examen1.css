@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.contenedor {
+    display: flex;
+
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}

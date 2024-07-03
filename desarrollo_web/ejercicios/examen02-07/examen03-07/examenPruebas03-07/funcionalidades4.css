@@ -1,0 +1,9 @@
+#miImagen {
+    width: 300px;
+    transition: transform 0.3s ease; /* Agregamos una transición suave */
+}
+
+#contenedor {
+    text-align: center;
+    justify-content: center;
+}

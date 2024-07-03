@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+#movableDiv {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(218, 143, 45);
+    line-height: 50px;
+    text-align: center;
+    left: 0;
+}
+
+
+#moveButton {
+    margin-bottom: 20px;
+    background-color: rgb(190, 190, 204);
+}
