@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google</title>
+    <link rel="stylesheet" href="google.css">
+</head>
+<style>
+   @import url('https://fonts.cdnfonts.com/css/product-sans');
+
+h1 {
+    font-weight: none;
+}
+
+.logo-blue {
+    color: dodgerblue;
+}
+
+.logo-red {
+    color: crimson;
+}
+
+.logo-yellow {
+    color: rgb(201, 201, 30);
+}
+
+.logo-green {
+    color: green;
+}
+
+.input-container {
+    position: relative;
+    width: 560px;
+    margin-top: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 20px 10px 40px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: none;
+}
+
+.input-container span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9aa0a6;
+    font-size: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    height: 36px;
+    margin: 0 5px;
+    padding: 0 16px;
+    color: #5f6368;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:hover {
+    border: 1px solid #c6c6c6;
+    background-color: #f1f1f1;
+}
+body {
+    font-family: 'Product Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+
+
+</style>
+
+<body>
+    <h1>
+        <span class="logo-blue">G</span>
+        <span class="logo-red">O</span>
+        <span class="logo-yellow">O</span>
+        <span class="logo-blue">G</span>
+        <span class="logo-green">L</span>
+        <span class="logo-red">E</span>
+    </h1>
+<header>
+<nav> 
+    <ul class="nav-right-section">
+        <li>
+            <a href="">gmail</a>
+        </li>
+        <li> 
+            <a href="">imagenes</a>
+        </li>
+<li class="menu-icon">
+    <a href="">
+        <i class="bi bi-grid-3x3-gap-fill"></i>
+    </a>
+</li>
+<li> 
+    <input type="submit" value="Iniciar sesion">
+</li>
+
+
+    </ul>
+</nav>
+
+</header>
+
+    <div class="input-container">
+        <span class="material-icons-outlined"></span>
+        <input type="text" placeholder="Buscar en Google">
+    </div>
+
+    <div class="buttons">
+        <button onclick="searchGoogle()">Buscar con Google</button>
+        <button onclick="alert('¡Buena suerte!')">Voy a tener suerte</button>
+    </div>
+
+
+</body>
+<script src="google.js"></script>
+
+</html>
