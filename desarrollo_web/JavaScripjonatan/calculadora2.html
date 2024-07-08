@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>calculadora2</title>
+<style>
+
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input, select, button {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #262555;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3609fd;
+        }
+
+        div#resultado {
+            margin-top: 15px;
+            background-color: #9de09f;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+</style>
+
+</head>
+<body>
+    <div class="contenedor">
+        <input type="text" id="numero1" name="numero1" placeholder="Número 1">
+        <select name="operador" id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="numero2" id="numero2" placeholder="Número 2">
+        <button id="calcular" onclick="calcular()">=</button>
+        <div id="resultado">0</div>
+    </div>
+</body>
+<script>
+    function calcular() {
+        // Obtener los valores de los inputs
+        let valor1 = parseFloat(document.getElementById('numero1').value);
+        let valor2 = parseFloat(document.getElementById('numero2').value);
+        let operador = document.getElementById('operador').value;
+        let resultado;
+
+        // Realizar la operación correspondiente
+        switch (operador) {
+            case '+':
+                resultado = valor1 + valor2;
+                break;
+            case '-':
+                resultado = valor1 - valor2;
+                break;
+            case 'x':
+                resultado = valor1 * valor2;
+                break;
+            case '/':
+                resultado = valor1 / valor2;
+                break;
+            default:
+                resultado = 'Operación no válida';
+                break;
+        }
+
+        // Mostrar el resultado
+        document.getElementById('resultado').innerText = resultado;
+    }
+</script>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+        input {
+            width: 2.5rem;
+        }
+
+        div#resultado {
+
+            margin-top: 15px;
+            background-color: gray;
+            width: 140px;
+            color: white;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <input type="text" id="numero1" name=" numero1">
+        <select name="operador" id="operador">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="/">/</option>
+        </select>
+        <input type="numbrer" name="numero2" id="numero2">
+        <button id="calcular" onclick="calcular()">=</button>
+        <div id="resultado">0</div>
+    </div>
+
+</body>
+<script>
+    // 1. identificar los elementos con el DOM
+    let num1 = document.getElementById('numero1');
+    let num2 = document.getElementById('numero2');
+    let operador = document.getElementById('operador');
+    let pantalla = document.getElementById('resultado');
+
+    // 2. crear la función
+    function calcular() {
+        // 3. tomar los values de los input
+        let valor1 = parseInt(num1.value);
+        let valor2 = parseInt(num2.value);
+
+        // 4. tomar el value del selector
+        let valorOperador = operador.value;
+
+        // 5. operar los numeros dependiendo del selector
+        let resultado = 0;
+
+        //tenemos cuatro posibilidadespara el operador:
+        //+-x/
+
+        if (valorOperador == '+') {
+            resultado = valor1 + valor2;
+        } else if (valorOperador == '-') {
+            resultado = valor1 - valor2;
+        } else if (valorOperador == 'x') {
+            resultado = valor1 * valor2;
+        } else if (valorOperador == '/') {
+            resultado = valor1 / valor2;
+        }
+        // 6. mostrar el resultado en pantalla
+        pantalla.innerHTML = resultado;
+
+    }
+</script>
+
+</html>
