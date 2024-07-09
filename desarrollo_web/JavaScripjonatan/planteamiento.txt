@@ -1,0 +1,56 @@
+1. Funciones de un cronómetro
+1.1 Contar el tiempo desde 0
+1.2 Cuentra atrás hasta 0
+2.Interfaz- Comunicación entre el usuario y la Interfaz
+
+2.1 Intercambio de información- 
+-De la app al usuario (un Display (pantalla))
+-Del usuario a la App (botones start, stop)
+
+2.2 Elementos visuales de la UI (User Interface- interfaz de usuario)
+Un display con el reloj
+-Elementos de control , botones.
+
+PSEUDOCODIGO
+
+1. pulsar STAR
+
+atributo onclick, funcion contar()'
+
+2.el reloj arranca 
+
+contar(){
+    contadores
+         centesimas (00)
+         segundos (00)
+         minutos (00)
+
+    contadores  ++ 
+
+    imprimir el tiempo en pantalla
+        minutos : segundos : centesimas     
+
+repetir el proceso casa centesima
+un intervalo /una cuenta atras
+}
+
+4.pulsar STOP
+onclick funcion detener 
+
+5.el tiempo se detiene 
+
+detener (){
+    detener/ eliminar el intervalo
+}
+
+6. pulsar RESET
+onclick funcion reiniciar 
+
+7.el reloj se reinicia 
+el reloj vuelve a su estado original
+
+reiniciar(){
+    contadores = 0;
+    imprimir en pantalla 
+       00:00:00
+}
